@@ -57,7 +57,7 @@ Here are some advanced Python programming techniques:
 
 - Comprehensions: Comprehensions are a concise way to create new lists, dictionaries, and sets from existing sequences. For example, the following code creates a new list of all the even numbers from 1 to 10:
 
-## Example
+ Example
 
 ```python
  even_numbers = [x for x in range(1, 11) if x % 2 == 0]
@@ -65,7 +65,7 @@ Here are some advanced Python programming techniques:
 
 - Python OOP: Python is an object-oriented programming language, which means that it allows you to create and use objects. Objects are data structures that contain data and code. For example, the following code creates a class called Person:
 
-## Example
+ Example
 
 ```python
 class Person:
@@ -79,7 +79,7 @@ class Person:
 
 You can then create instances of the Person class and use them to call the `greet()` method:
 
-## Example
+ Example
 
 ```Python
 p1 = Person("Alice", 25)
@@ -193,7 +193,7 @@ By following these tips, you can write Pythonic code that is readable, efficient
 
 # Advanced Libraries for AI Development
 
-## Libraries for AI
+ Libraries for AI
 
 `From sources across the web`
 
