@@ -155,7 +155,7 @@ These are just a few of the many advanced Python programming techniques that are
 
 # Pythonic Code Practices
 
-## Here are some tips for writing Pythonic code:
+Here are some tips for writing Pythonic code:
 
 - **Use descriptive variable names**.
   This will make your code more readable and easier to understand. For example, instead of using the variable name `x`, use a more descriptive name like `customer_name` or `product_price`.
@@ -174,7 +174,7 @@ These are just a few of the many advanced Python programming techniques that are
 - **Follow the PEP 8 style guide**.
   PEP 8 is a style guide for Python code that provides recommendations on things like line length, indentation, and naming conventions. Following PEP 8 will make your code more readable and consistent.
 
-## Here are some additional tips for writing
+Here are some additional tips for writing
 
 - **Pythonic code**:
   Use the right data structure for the job.
