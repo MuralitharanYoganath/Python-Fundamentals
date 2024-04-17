@@ -3,19 +3,13 @@
 ## Table of content
 
 - [Introduction Python Fundamentals](#introduction-python-fundamentals)
-  
 - [Advanced Python Programming Techniques](#advanced-python-programming-techniques)
-    
   - [Pythonic Code Practices](#pythonic-code-practices)
-    
   - [Advanced Libraries for AI Development](#advanced-libraries-for-ai-development)
-    
   - [Optimization Strategies](#optimization-strategies)
-
 - [Setting Up Development Environment](#setting-up-development-environment)
   - [Utilizing Conda, Pip, and Virtual Environments](#utilizing-conda-pip-and-virtual-environments)
   - [Best Practices for Managing Python Environment](#best-practices-for-managing-python-environment)
-
 - [References](#References)
 
 ## **Introduction Python Fundamentals**
