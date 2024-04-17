@@ -1222,11 +1222,11 @@ my_function()
 # Prints "Hello, world!"
 ```
 
-In this example, the cooldown() decorator is used to apply a 10-second cooldown to the my_function() function. This means that the function can only be called once every 10 seconds. If the function is called more often than that, an exception will be raised.
+In this example, the `cooldown()`decorator is used to apply a 10-second cooldown to the `my_function()` function. This means that the function can only be called once every 10 seconds. If the function is called more often than that, an exception will be raised.
 
-The cooldown() decorator takes one argument: the number of seconds to wait before the function can be called again. This can be any number, including fractions of a second.
+The `cooldown()` decorator takes one argument: the number of seconds to wait before the function can be called again. This can be any number, including fractions of a second.
 
-The cooldown() decorator can be used to any function, regardless of its arguments or return value. It can also be used to nested functions.
+The `cooldown()` decorator can be used to any function, regardless of its arguments or return value. It can also be used to nested functions.
 
 
 
