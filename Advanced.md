@@ -864,19 +864,25 @@ Below are the following operations that can done by using namedtuple():
 - Conversion Operations
 - Additional Operations
 
-Create a NameTuple in Python
+**Create a NameTuple in Python**
+
 This creates a new namedtuple class using the namedtuple() function from the collections module. The first argument is the name of the new class, and the second argument is a list of field names.
 
-
+```Python
 from collections import namedtuple
 
 Point = namedtuple('Point', ['x', 'y'])
 p = Point(x=1, y=2)
 print(p.x, p.y) 
-
+```
 Output
+
+```Python
 1 2
-Access Operations
+```
+
+**Access Operations**
+
 Namedtuples in Python provide convenient ways to access their fields. Below are some access operations provided in Python for NamedTuple:
 
 Access by index

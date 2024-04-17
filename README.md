@@ -3,13 +3,21 @@
 ## Table of content
 
 - [Introduction Python Fundamentals](#introduction-python-fundamentals)
+
 - [Advanced Python Programming Techniques](#advanced-python-programming-techniques)
+
   - [Pythonic Code Practices](#pythonic-code-practices)
+
   - [Advanced Libraries for AI Development](#advanced-libraries-for-ai-development)
+
   - [Optimization Strategies](#optimization-strategies)
+
 - [Setting Up Development Environment](#setting-up-development-environment)
+
   - [Utilizing Conda, Pip, and Virtual Environments](#utilizing-conda-pip-and-virtual-environments)
+
   - [Best Practices for Managing Python Environment](#best-practices-for-managing-python-environment)
+
 - [References](#References)
 
 ## **Introduction Python Fundamentals**
@@ -58,15 +66,18 @@ If you are interested in learning Python, there are a number of resources availa
 
 **Here are some advanced Python programming techniques:**
 
-- Comprehensions: Comprehensions are a concise way to create new lists, dictionaries, and sets from existing sequences. For example, the following code creates a new list of all the even numbers from 1 to 10:
+**Comprehensions:** 
+
+- Comprehensions are a concise way to create new lists, dictionaries, and sets from existing sequences. For example, the following code creates a new list of all the even numbers from 1 to 10:
 
 **Example**
 
 ```python
  even_numbers = [x for x in range(1, 11) if x % 2 == 0]
 ```
+**Python OOP:**
 
-- Python OOP: Python is an object-oriented programming language, which means that it allows you to create and use objects. Objects are data structures that contain data and code. For example, the following code creates a class called Person:
+- Python is an object-oriented programming language, which means that it allows you to create and use objects. Objects are data structures that contain data and code. For example, the following code creates a class called Person:
 
 **Example**
 
@@ -98,7 +109,9 @@ Hello, my name is Alice and I am 25 years old.
 Hello, my name is Bob and I am 30 years old.
 ```
 
-- Software design patterns: Software design patterns are reusable solutions to common programming problems. For example, the following code implements the singleton design pattern:
+**Software design patterns:** 
+
+- Software design patterns are reusable solutions to common programming problems. For example, the following code implements the singleton design pattern:
 
 **Example**
 
@@ -121,7 +134,9 @@ singleton = Singleton()
 
 The singleton design pattern ensures that there is only one instance of a class.
 
-- Functional programming techniques: Functional programming is a programming paradigm that treats computation as the evaluation of mathematical functions and avoids changing-state and mutable data. For example, the following code uses the map() function to apply the square() function to each element of a list:
+**Functional programming techniques:**
+
+-  Functional programming is a programming paradigm that treats computation as the evaluation of mathematical functions and avoids changing-state and mutable data. For example, the following code uses the map() function to apply the square() function to each element of a list:
 
 **Example**
 
@@ -136,7 +151,9 @@ squared_numbers = map(square, numbers)
 print(list(squared_numbers))
 ```
 
-- Lambda functions: Lambda functions are anonymous functions that can be used to create concise and readable code. For example, the following code uses a lambda function to sort a list of numbers in descending order:
+**Lambda functions:**
+
+-  Lambda functions are anonymous functions that can be used to create concise and readable code. For example, the following code uses a lambda function to sort a list of numbers in descending order:
 
 **Example**
 
@@ -152,14 +169,17 @@ print(numbers)
 [5, 4, 3, 2, 1]
 ```
 
-- **Python testing**:
-  Python testing is the process of testing Python code to ensure that it works as expected. There are many different Python testing frameworks available, such as unittest, pytest, and nose.
+**Python testing**:
 
-- **Parallel computing**:
-  Parallel computing is a type of computation in which many calculations are carried out simultaneously. Python supports parallel computing through the use of the multiprocessing module.
+  - Python testing is the process of testing Python code to ensure that it works as expected. There are many different Python testing frameworks available, such as unittest, pytest, and nose.
 
-- **Data serialization and persistence**:
-  Data serialization is the process of converting data into a format that can be stored or transmitted. Python supports data serialization through the use of the pickle module. Data persistence is the process of storing data so that it can be retrieved later. Python supports data persistence through the use of databases, such as MySQL and PostgreSQL.
+**Parallel computing**:
+
+  - Parallel computing is a type of computation in which many calculations are carried out simultaneously. Python supports parallel computing through the use of the multiprocessing module.
+
+**Data serialization and persistence**:
+
+  - Data serialization is the process of converting data into a format that can be stored or transmitted. Python supports data serialization through the use of the pickle module. Data persistence is the process of storing data so that it can be retrieved later. Python supports data persistence through the use of databases, such as MySQL and PostgreSQL.
 
 These are just a few of the many advanced Python programming techniques that are available. By learning and using these techniques, you can write more efficient, readable, and maintainable Python code.
 
@@ -168,23 +188,31 @@ These are just a few of the many advanced Python programming techniques that are
 **Here are some tips for writing Pythonic code:**
 
 - **Use descriptive variable names**.
+
   This will make your code more readable and easier to understand. For example, instead of using the variable name `x`, use a more descriptive name like `customer_name` or `product_price`.
 
 - **Use functions and classes to organize your code**.
+
   This will make your code more modular and reusable. Functions should be short and to the point, and classes should encapsulate related data and behavior.
 
 - **Use Python's built-in functions and libraries**.
+
   There is no need to reinvent the wheel when Python already has many built-in functions and libraries that can do the job for you. For example, instead of writing your own function to sort a list, you can use the built-in `sorted()` function.
 
 - **Use list comprehensions and generators**.
+
   List comprehensions and generators are powerful tools that can help you write more concise and efficient code. For example, instead of writing a for loop to create a new list, you can use a list comprehension.
+
 - **Document your code**.
+
   This will help you and others understand what your code does and how to use it. Comments should be clear and concise, and they should explain the purpose of the code, not just what the code does.
 
 - **Follow the PEP 8 style guide**.
+
   PEP 8 is a style guide for Python code that provides recommendations on things like line length, indentation, and naming conventions. Following PEP 8 will make your code more readable and consistent.
 
 **Here are some additional tips for writing**
+
 - **Pythonic code**:
   Use the right data structure for the job.
   Python has a variety of data structures, each with its own strengths and weaknesses. Choose the right data structure for the job to make your code more efficient and easier to understand.
@@ -204,24 +232,33 @@ By following these tips, you can write Pythonic code that is readable, efficient
 
 #### Libraries for AI
 
+From sources across the web
 
+- **TensorFlow** 
 
-
-`From sources across the web`
-
-- **TensorFlow** [Websit lilnk](https://www.tensorflow.org/)
+  TensorFlow is a free, open-source library for machine learning and artificial intelligence. It was developed by Google Brain for Google's research and production, and is available on macOS and Microsoft Windows. TensorFlow is a system that manages all aspects of a machine learning system, and can be used for a variety of tasks, including: natural language processing, image recognition, handwriting recognition, partial differential equations, and training and inference of deep neural networks [Websit lilnk](https://www.tensorflow.org/).
 
   ![Images](./Images/download.png)
 
-- **PyTorch** [Websit lilnk](https://pytorch.org/)
+- **PyTorch**
+
+  Select your preferences and run the install command. Stable represents the most currently tested and supported version of PyTorch. This should be suitable for many users. Preview is available if you want the latest, not fully tested and supported, builds that are generated nightly. Please ensure that you have met the prerequisites below (e.g., numpy), depending on your package manager. Anaconda is our recommended package manager since it installs all dependencies. You can also install previous versions of PyTorch. Note that LibTorch is only available for C++ [Websit lilnk](https://pytorch.org/).
 
   ![Images](./Images/PyTorch.jpeg)
 
-- **Scikit-learn** [Websit lilnk](https://scikit-learn.org/stable)
+- **Scikit-learn** 
+
+  Scikit-learn is a free software machine learning library for the Python programming language. It features various classification, regression and clustering algorithms including support vector machines, random forests, gradient boosting, k-means and DBSCAN. It is designed to interoperate with the Python numerical and scientific libraries NumPy and SciPy.
+
+  Scikit-learn is a free, open-source Python library for machine learning. It is built on top of the NumPy and SciPy libraries, and provides a wide range of machine learning algorithms, including classification, regression, clustering, and dimensionality reduction.
+
+  Scikit-learn is a popular choice for machine learning in Python because it is easy to use, efficient, and well-documented. It is also actively developed and maintained, with new features and bug fixes being released regularly [Websit lilnk](https://scikit-learn.org/stable).
 
   ![images](./Images/Scikit-learn.png)
 
-- **Theano** [Websit lilnk](https://pypi.org/project/Theano)
+- **Theano** 
+
+  Theano is a Python library that allows users to define, optimize, and evaluate mathematical expressions, especially those involving multi-dimensional arrays. Theano is available on macOS and Microsoft Windows. It was developed by the Université de Montréal and has been available since 2007 [Websit lilnk](https://pypi.org/project/Theano).
 
   ![Images](./Images/Theano.jpeg)
 
@@ -232,30 +269,38 @@ more then ...
 **Here are some optimization strategies in Python:**
 
 - **Use the right data structure**.
-The choice of data structure can have a big impact on the performance of your code. For example, if you need to store a large number of items and need to be able to access them quickly, you might want to use a hash table or a dictionary. If you need to store a list of items and need to be able to iterate over them quickly, you might want to use a list or an array.
+
+  The choice of data structure can have a big impact on the performance of your code. For example, if you need to store a large number of items and need to be able to access them quickly, you might want to use a hash table or a dictionary. If you need to store a list of items and need to be able to iterate over them quickly, you might want to use a list or an array.
 
 - **Use built-in functions and libraries**.
-Python has a number of built-in functions and libraries that can help you to optimize your code. For example, the timeit module can be used to measure the performance of your code, and the cProfile module can be used to profile your code and identify bottlenecks.
+
+  Python has a number of built-in functions and libraries that can help you to optimize your code. For example, the timeit module can be used to measure the performance of your code, and the cProfile module can be used to profile your code and identify bottlenecks.
 
 - **Avoid unnecessary loops**.
-Loops can be a great way to process data, but they can also be a source of performance problems. If you find yourself using a loop to do something that could be done more efficiently with a built-in function or library, try to use the built-in function or library instead.
+
+  Loops can be a great way to process data, but they can also be a source of performance problems. If you find yourself using a loop to do something that could be done more efficiently with a built-in function or library, try to use the built-in function or library instead.
 
 - **Use caching**.
-Caching can be a great way to improve the performance of your code by storing the results of expensive computations so that they can be reused later. For example, if you are repeatedly calling a function that takes a long time to execute, you could cache the results of the function so that you don't have to call it again the next time you need the results.
+
+  Caching can be a great way to improve the performance of your code by storing the results of expensive computations so that they can be reused later. For example, if you are repeatedly calling a function that takes a long time to execute, you could cache the results of the function so that you don't have to call it again the next time you need the results.
 
 - **Use a profiler**.
-A profiler is a tool that can help you to identify bottlenecks in your code. Once you have identified a bottleneck, you can try to optimize the code to improve its performance.
+
+  A profiler is a tool that can help you to identify bottlenecks in your code. Once you have identified a bottleneck, you can try to optimize the code to improve its performance.
 
 **Here are some additional tips for optimizing Python code:**
 
 - **Use generators and iterators**.
-Generators and iterators can be a great way to improve the performance of your code by avoiding the need to create large lists or arrays.
+
+  Generators and iterators can be a great way to improve the performance of your code by avoiding the need to create large lists or arrays.
 
 - **Use NumPy and SciPy**.
-NumPy and SciPy are two popular Python libraries that provide a number of functions and libraries that can be used to optimize scientific and numerical computing code.
+
+  NumPy and SciPy are two popular Python libraries that provide a number of functions and libraries that can be used to optimize scientific and numerical computing code.
 
 - **Use Cython**.
-Cython is a language that allows you to write Python code that can be compiled to C code. This can significantly improve the performance of your code, especially for computationally intensive tasks.
+
+  Cython is a language that allows you to write Python code that can be compiled to C code. This can significantly improve the performance of your code, especially for computationally intensive tasks.
 
 ## **Setting Up Development Environment**
 
@@ -288,9 +333,6 @@ You can use pip to install packages within a Conda virtual environment. Conda vi
 #### **How to Pip Install a Package Under a Conda Virtual Environment**
 
 In this technical blog, we will discover how maintaining isolated and reproducible dependencies can enhance collaboration. We provide a step-by-step guide on installing Python packages using pip within a Conda virtual environment for seamless project management.
-
-![Images](./Images/how-to-blog2.webp)
-
 
 When working on [data science](https://saturncloud.io/glossary/data-science/) projects, it’s crucial to manage your [Python](https://saturncloud.io/glossary/python/) packages effectively. This ensures that your project’s dependencies are isolated and reproducible, which is essential for collaborative work. In this blog post, we’ll guide you through the process of installing Python packages using pip under a Conda virtual environment.
 
@@ -350,6 +392,33 @@ Replace `package-name` with the name of the package you want to install.
 
 After the installation is complete, you can verify it by importing the package in a Python script or shell within your Conda environment.
 
+There are two ways to verify if Python is installed on your computer:
+
+ - Using the command prompt:
+
+ Open the command prompt and type the following command:
+
+```python
+python --version
+```
+
+If Python is installed, it will display the version number of Python installed on your system. If Python is not installed, it will display an error message.
+
+ - Using the Python interpreter:
+
+ Open the Python interpreter and type the following command:
+
+```python
+import sys
+print(sys.version)
+```
+
+This will print the version number of Python installed on your system.
+
+If you are using Windows, you can also verify the installation of Python by opening the Control Panel and going to Programs and Features. If Python is installed, it will be listed in the list of programs.
+
+Once you have verified that Python is installed, you can start using it to write Python programs.
+
 #### **Conclusion**
 
 Using `pip` to install packages under a Conda virtual environment is a useful approach when you encounter packages that are not readily available via Conda repositories or when you need to work with custom or specific packages. By following the steps outlined in this guide and being mindful of dependency management, you can maintain a clean and organized environment for your Python projects while harnessing the power of both Conda and `pip` to meet your specific needs.
@@ -365,7 +434,9 @@ For example, you can create an environment using conda and then install packages
 
 **Here are some best practices for managing Python environments in Python:**
 
-- Use virtual environments.: Virtual environments allow you to create isolated environments for each of your Python projects. This means that you can install different versions of Python and packages for each project, without affecting your other projects. To create a virtual environment, you can use the `venv` module that is included in Python 3.3 or later.
+- **Use virtual environments :** 
+
+  Virtual environments allow you to create isolated environments for each of your Python projects. This means that you can install different versions of Python and packages for each project, without affecting your other projects. To create a virtual environment, you can use the `venv` module that is included in Python 3.3 or later.
 
 **Example**
 
@@ -411,11 +482,11 @@ deactivate
 
 ## **References**
 
-  **If to learn click this link button** 👇
+**If to learn click this link button** 👇
 
-  - [References link](https://www.google.com/search?q=Introduction+Python+Fundamentals&rlz=1C1CHBF_enIN1032IN1032&oq=Introduction+Python+Fundamentals&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDwyBggCEEUYPTIGCAMQRRg80gEIMTQ2M2owajSoAgCwAgE&sourceid=chrome&ie=UTF-8)
+- [References link](https://www.google.com/search?q=Introduction+Python+Fundamentals&rlz=1C1CHBF_enIN1032IN1032&oq=Introduction+Python+Fundamentals&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDwyBggCEEUYPTIGCAMQRRg80gEIMTQ2M2owajSoAgCwAgE&sourceid=chrome&ie=UTF-8)
 
-  - [References Link](https://www.google.com/search?q=Setting+Up+Development+Environment+in+python&rlz=1C1CHBF_enIN1032IN1032&oq=Setting+Up+Development+Environment&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIGCAAQRRg5MgYIARBFGDvSAQgzMDk3ajBqNKgCALACAQ&sourceid=chrome&ie=UTF-8)
+- [References Link](https://www.google.com/search?q=Setting+Up+Development+Environment+in+python&rlz=1C1CHBF_enIN1032IN1032&oq=Setting+Up+Development+Environment&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIGCAAQRRg5MgYIARBFGDvSAQgzMDk3ajBqNKgCALACAQ&sourceid=chrome&ie=UTF-8)
 
 
 
