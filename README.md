@@ -24,7 +24,6 @@ Python is a general-purpose programming language that is used for a wide variety
 
 Python uses new lines to complete a command, as opposed to other programming languages which often use semicolons or parentheses. Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions and classes. Other programming languages often use curly-brackets for this purpose.
 
-Free couser  are 10 Days only join now [Website link](https://learning.oreilly.com/videos/python-fundamentals/9780135917411/9780135917411-PFLL_Part1_Intro/) 
 
 **Here are some of the fundamental concepts of Python:**
 
@@ -67,11 +66,7 @@ If you are interested in learning Python, there are a number of resources availa
 
 - Comprehensions: Comprehensions are a concise way to create new lists, dictionaries, and sets from existing sequences. For example, the following code creates a new list of all the even numbers from 1 to 10:
 
-<<<<<<< HEAD
 **Example**
-=======
- Example
->>>>>>> da585b58894bd3d097400a4ed442d2711aabdd96
 
 ```python
  even_numbers = [x for x in range(1, 11) if x % 2 == 0]
@@ -79,11 +74,7 @@ If you are interested in learning Python, there are a number of resources availa
 
 - Python OOP: Python is an object-oriented programming language, which means that it allows you to create and use objects. Objects are data structures that contain data and code. For example, the following code creates a class called Person:
 
-<<<<<<< HEAD
 **Example**
-=======
- Example
->>>>>>> da585b58894bd3d097400a4ed442d2711aabdd96
 
 ```python
 class Person:
@@ -97,11 +88,8 @@ class Person:
 
 You can then create instances of the Person class and use them to call the `greet()` method:
 
-<<<<<<< HEAD
+
 **Example**
-=======
- Example
->>>>>>> da585b58894bd3d097400a4ed442d2711aabdd96
 
 ```Python
 p1 = Person("Alice", 25)
@@ -220,29 +208,28 @@ By following these tips, you can write Pythonic code that is readable, efficient
 
 ### **Advanced Libraries for AI Development**
 
-<<<<<<< HEAD
 #### Libraries for AI
-=======
- Libraries for AI
->>>>>>> da585b58894bd3d097400a4ed442d2711aabdd96
+
+
+
 
 `From sources across the web`
 
 - **TensorFlow** [Websit lilnk](https://www.tensorflow.org/)
 
-  ![Images](./images/download.png)
+  ![Images](./Images/download.png)
 
 - **PyTorch** [Websit lilnk](https://pytorch.org/)
 
-  ![Images](./images/PyTorch.jpeg)
+  ![Images](./Images/PyTorch.jpeg)
 
 - **Scikit-learn** [Websit lilnk](https://scikit-learn.org/stable)
 
-  ![images](./images/Scikit-learn.png)
+  ![images](./Images/Scikit-learn.png)
 
 - **Theano** [Websit lilnk](https://pypi.org/project/Theano)
 
-  ![Images](./images/Theano.jpeg)
+  ![Images](./Images/Theano.jpeg)
 
 more then ...
 
