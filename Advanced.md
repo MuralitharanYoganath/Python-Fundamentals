@@ -885,13 +885,15 @@ Output
 
 Namedtuples in Python provide convenient ways to access their fields. Below are some access operations provided in Python for NamedTuple:
 
-Access by index
-Access by keyname
-Access Using getattr()
-Access By Index
+- Access by index
+- Access by keyname
+- Access Using getattr()
+
+**Access By Index**
+
 The attribute values of namedtuple() are ordered and can be accessed using the index number unlike dictionaries which are not accessible by index. In this example, we are accessing the student’s by using index.
 
-
+```python
 # importing "collections" for namedtuple()
 import collections
 
@@ -904,13 +906,18 @@ S = Student('Nandini', '19', '2541997')
 # Access using index
 print("The Student age using index is : ", end="")
 print(S[1])
+```
 
 Output
+```python
 The Student age using index is : 19
-Access by keyname
+```
+
+**Access by keyname**
+
 Access by keyname is also allowed as in dictionaries. In this example, we are using keyname to access the student’s name.
 
-
+```python
 # importing "collections" for namedtuple()
 import collections
 
@@ -923,13 +930,16 @@ S = Student('Nandini', '19', '2541997')
 # Access using name
 print("The Student name using keyname is : ", end="")
 print(S.name)
-
+```
 Output
+```python
 The Student name using keyname is : Nandini
-Access Using getattr()
+```
+**Access Using getattr()**
+
 This is yet another way to access the value by giving namedtuple and key value as its argument. In this example, we are using getattr() to access the student’s id in the given namedtuple.
 
-
+```python
 # importing "collections" for namedtuple()
 import collections
 
@@ -942,12 +952,17 @@ S = Student('Nandini', '19', '2541997')
 # Access using getattr()
 print("The Student DOB using getattr() is : ", end="")
 print(getattr(S, 'DOB'))
+```
 
 Output
+```python
 The Student DOB using getattr() is : 2541997
-Conversion Operations
-Namedtuples provide a few useful conversion operations to work with other data types in Python. Below are the following conversion operations that is provided for namedtuples in Python:
+```
 
+**Conversion Operations**
+
+Namedtuples provide a few useful conversion operations to work with other data types in Python. Below are the following conversion operations that is provided for namedtuples in Python:
+```python
 Using _make()
 Using _asdict()
 Using “**” (double star) operator
@@ -973,14 +988,18 @@ di = {'name': "Nikhil", 'age': 19, 'DOB': '1391997'}
 # using _make() to return namedtuple()
 print("The namedtuple instance using iterable is  : ")
 print(Student._make(li))
-
+```
 Output
+```python
 The namedtuple instance using iterable is  : 
 Student(name='Manjeet', age='19', DOB='411997')
-Conversion Operation Using _asdict()
+```
+
+**Conversion Operation Using _asdict()**
+
 This function returns the OrderedDict() as constructed from the mapped values of namedtuple(). In this example, we are using _asdict() to convert the input list into namedtuple instance.
 
-
+```python
 import collections
 # Declaring namedtuple()
 Student = collections.namedtuple('Student',
@@ -998,14 +1017,18 @@ di = {'name': "Nikhil", 'age': 19, 'DOB': '1391997'}
 # using _asdict() to return an OrderedDict()
 print("The OrderedDict instance using namedtuple is  : ")
 print(S._asdict())
-
+```
 Output
+```python
 The OrderedDict instance using namedtuple is  : 
 OrderedDict([('name', 'Nandini'), ('age', '19'), ('DOB', '2541997')])
-Using “**” (double star) operator
+```
+
+**Using “**” (double star) operator**
+
 This function is used to convert a dictionary into the namedtuple(). In this example, we are using “**” to convert the input list into namedtuple.
 
-
+```python
 import collections
 
 # Declaring namedtuple()
@@ -1024,21 +1047,27 @@ di = {'name': "Nikhil", 'age': 19, 'DOB': '1391997'}
 # using ** operator to return namedtuple from dictionary
 print("The namedtuple instance from dict is  : ")
 print(Student(**di))
-
+```
 Output
+```python
 The namedtuple instance from dict is  : 
 Student(name='Nikhil', age=19, DOB='1391997')
-Additional Operations 
+```
+
+**Additional Operations**
+
 There are some additional operations that are provided in Python for NamedTuples:
 
-_fields
-_replace()
-__new__()
-__getnewargs__()
-_fields
+- _fields
+- _replace()
+- __new__()
+- __getnewargs__()
+
+**_fields**
+
 This data attribute is used to get all the keynames of the namespace declared. In this example, we are using _fields to get all the keynames of the namespace declared.
 
-
+```python
 import collections
 Student = collections.namedtuple('Student', ['name', 'age', 'DOB'])
 
@@ -1048,14 +1077,18 @@ S = Student('Nandini', '19', '2541997')
 # using _fields to display all the keynames of namedtuple()
 print("All the fields of students are : ")
 print(S._fields)
-
+```
 Output
+```python
 All the fields of students are : 
 ('name', 'age', 'DOB')
-_replace()
+```
+
+**_replace()**
+
 _replace() is like str.replace() but targets named fields( does not modify the original values). In this example, we are using _replace() to replace a name from “Nandini” to “Manjeet”.
 
-
+```python
 import collections
 
 # Declaring namedtuple()
@@ -1069,14 +1102,17 @@ S = Student('Nandini', '19', '2541997')
 # it does not modify the original
 print("returns a new namedtuple : ")
 print(S._replace(name='Manjeet'))
-
+```
 Output
+```python
 returns a new namedtuple : 
 Student(name='Manjeet', age='19', DOB='2541997')
-__new__()
+```
+**__new__()**
+
 This function returns a new instance of the Student class, by taking the values that we want to assign to the keys in the named tuple. In this example, we are using __new__() to return a new instance of the Student class.
 
-
+```python
 import collections
 
 # Declaring namedtuple()
@@ -1087,13 +1123,16 @@ S = Student('Nandini', '19', '2541997')
 
 # Student.__new__ returns a new instance of Student(name,age,DOB)
 print(Student.__new__(Student,'Himesh','19','26082003'))
-
+```
 Output
+```python
 Student(name='Himesh', age='19', DOB='26082003')
-__getnewargs__()
+```
+**__getnewargs__()**
+
 This function returns the named tuple as a plain tuple. In this example, we are doing the same by using __getnewargs__().
 
-
+```python
 import collections
 
 # Declaring namedtuple()
@@ -1105,12 +1144,89 @@ S = Student('Nandini', '19', '2541997')
 H=Student('Himesh','19','26082003')
 # .__getnewargs__ returns the named tuple as a plain tuple
 print(H.__getnewargs__())
-
+```
 Output
+```
 ('Himesh', '19', '26082003')
+```
 
 ### Cool Down
 
+**Here is an example of how to create a cooldown in Python:**
+
+```python
+import time
+
+def cooldown(seconds):
+  """
+  A decorator that applies a cooldown to a function.
+
+  Args:
+    seconds: The number of seconds to wait before the function can be called again.
+
+  Returns:
+    A decorator function.
+  """
+
+  def decorator(func):
+    """
+    The decorator function.
+
+    Args:
+      func: The function to be decorated.
+
+    Returns:
+      The decorated function.
+    """
+
+    last_call = time.time()
+
+    def wrapper(*args, **kwargs):
+      """
+      The wrapper function.
+
+      Args:
+        *args: The arguments to be passed to the decorated function.
+        **kwargs: The keyword arguments to be passed to the decorated function.
+
+      Returns:
+        The return value of the decorated function.
+      """
+
+      now = time.time()
+      if now - last_call < seconds:
+        raise Exception("Cooldown in effect")
+
+      last_call = now
+      return func(*args, **kwargs)
+
+    return wrapper
+
+  return decorator
+
+# Example usage:
+
+@cooldown(10)
+def my_function():
+  print("Hello, world!")
+
+my_function()
+# Prints "Hello, world!"
+
+my_function()
+# Raises an exception: "Cooldown in effect"
+
+time.sleep(10)
+
+my_function()
+# Prints "Hello, world!"
+```
+
+In this example, the cooldown() decorator is used to apply a 10-second cooldown to the my_function() function. This means that the function can only be called once every 10 seconds. If the function is called more often than that, an exception will be raised.
+
+The cooldown() decorator takes one argument: the number of seconds to wait before the function can be called again. This can be any number, including fractions of a second.
+
+The cooldown() decorator can be used to any function, regardless of its arguments or return value. It can also be used to nested functions.
 
 
 
