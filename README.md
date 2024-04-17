@@ -271,9 +271,9 @@ Cython is a language that allows you to write Python code that can be compiled t
 
 2. **Choose a code editor** : There are many different code editors available, such as PyCharm, Visual Studio Code, and Sublime Text. Choose one that you are comfortable with and that has the features you need.
 
-3. **Create a virtual environment** : A virtual environment is a Python environment that is isolated from your system's Python environment. This allows you to install different versions of Python and packages without affecting your system's Python environment. To create a virtual environment, you can use the venv module.
+3. **Create a virtual environment** : A virtual environment is a Python environment that is isolated from your system's Python environment. This allows you to install different versions of Python and packages without affecting your system's Python environment. To create a virtual environment, you can use the  `python3 -m venv` module.
 
-4. **Activate the virtual environment** : Once you have created a virtual environment, you need to activate it before you can use it. To activate a virtual environment, you can use the activate script.
+4. **Activate the virtual environment** : Once you have created a virtual environment, you need to activate it before you can use it. To activate a virtual environment, you can use the activate script `source venv/bin/activate` command.
 
 5. **Install packages** : Once you have activated a virtual environment, you can install packages using the pip command. Pip is a package manager for Python.
 
