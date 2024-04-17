@@ -5,17 +5,24 @@
 - [Introduction Advanced Python](#introduction-advanced-python)
 
     - [comprehension](#comprehension)
+
     - [Generator Functions](#generator-functions)
+
         - [Yield keyword](#yield-keyword)
+
     - [Decorators](#Decorators)
+
     - [Context Managers](#context-managers)
+
     - [Unpacking](#Unpacking)
+
     - [Namedtuple](#namedtuple)
+
 ## Introduction Advanced Python
 
 Advanced Python helps you take your Python skills to the next level with in-depth tutorials on advanced topics like concurrency, metaprogramming, optimization, testing, and deploying production applications. Master advanced Python features and learn professional coding best practices.
 
-### comprehension
+### Comprehension
 
 Comprehensions are a concise way to create new sequences (such as lists, sets, and dictionaries) from existing sequences. Python 
 supports four types of comprehensions:
@@ -60,6 +67,7 @@ This code creates a new generator called `new_generator` that yields the squares
 Comprehensions can be a powerful tool for creating new sequences from existing sequences. They can be used to filter, transform, and map data in a concise and efficient way.
 
 Example Program 
+
 ```python
 # Python program to demonstrate list comprehension in Python 
 
@@ -114,6 +122,7 @@ for i in table:
 	print (i)
 ```
 Output
+
 ```python
 [1, 9, 25, 49, 81]
 [1, 9, 25, 49, 81]
@@ -138,7 +147,7 @@ Multiplication Table
 ```
 After getting the list, we can get a part of it using python’s slicing operator which has the following syntax: 
 
-    [start : stop : steps]  
+   > [start : stop : steps]  
 
     which means that slicing will start from index start
     will go up to stop in step of steps. 
@@ -148,6 +157,7 @@ After getting the list, we can get a part of it using python’s slicing operato
 So [: stop] will slice list from starting till stop index and [start : ] will slice list from start index till end Negative value of steps shows right to left traversal instead of left to right traversal that is why [: : -1] prints list in reverse order.
 
 Example Program
+
 ```python
 # Let us first create a list to demonstrate slicing 
 # lst contains all number from 1 to 10 
@@ -184,6 +194,7 @@ print (lst_rev_9_5_2)
 
 ``` 
 Output
+
 ```Python
 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 [2, 3, 4, 5]
@@ -197,6 +208,7 @@ Output
 We can use the filter function to filter a list based on some condition provided as a lambda expression as the first argument and list as the second argument, an example of which is shown below :
 
 Example Program
+
 ```Python
 import functools 
 
@@ -218,6 +230,7 @@ print (functools.reduce(lambda a,b: a if (a > b) else b, [7, 12, 45, 100, 15]))
 ```
 
 Output
+
 ```Python
 [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
 [25]
@@ -243,6 +256,7 @@ Example Program
 In this example, we will create a simple generator that will yield three integers. Then we will print these integers by using Python for loop.
 
 ```python
+
 # A generator function that yields 1 for first time, 
 # 2 second time and 3 third time 
 def simpleGeneratorFun(): 
@@ -270,6 +284,7 @@ Example Program
 In this example, we will create a simple generator function in Python to generate objects using the next() function.
 
 ```Python
+
 # A Python program to demonstrate use of 
 # generator object with next() 
 
@@ -288,13 +303,16 @@ x = simpleGeneratorFun()
 print(next(x)) 
 print(next(x)) 
 print(next(x))
+
 ```
 
 Output
+
 ```Python
 1
 2
 3
+
 ```
 
 Example Program
@@ -302,6 +320,7 @@ Example Program
 In this example, we will create two generators for Fibonacci Numbers, first a simple generator and second generator using a for loop.
 
 ```Python
+
 # A simple generator for Fibonacci Numbers 
 def fib(limit): 
 	
@@ -329,9 +348,13 @@ print(next(x))
 print("\nUsing for in loop") 
 for i in fib(5): 
 	print(i)
+
 ```
+
 Output
+
 ```Python
+
 0
 1
 1
@@ -352,9 +375,7 @@ In Python, generator expression is another way of writing the generator function
 #### ***Generator Expression Syntax***
 The generator expression in Python has the following Syntax:
 
-    (expression for item in iterable)
-    
-Example:
+ Example:
 
 In this example, we will create a generator object that will print the multiples of 5 between the range of 0 to 5 which are also divisible by 2.
 
@@ -365,7 +386,9 @@ generator_exp = (i * 5 for i in range(5) if i%2==0)
 for i in generator_exp: 
     print(i)
 ```
+
 Output:
+
 ```Python 
 0
 10
@@ -408,7 +431,9 @@ print(type(obj))
 print(next(obj))
 print(next(obj))
 ```
+
 Output 
+
 ```Python 
 <class 'generator'>
 Hello world!!
@@ -418,6 +443,7 @@ Hello world!!
 Here, we are generating an infinite sequence of numbers with yield, yield returns the number and increments the num by + 1. 
 
 **Note:** Here we can observe that num+=1 is executed after yield but in the case of a return, no execution takes place after the return keyword.
+
 ```Python 
 def inf_sequence():
     num = 0
@@ -427,8 +453,11 @@ def inf_sequence():
          
 for i in inf_sequence():
     print(i, end=" ")
+
 ```
+
 Output:
+
 ```Python 
 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 
 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 
@@ -439,6 +468,7 @@ Output:
 **Example 3: Demonstrating yield working with a list.**
 
 Here, we are extracting the even number from the list.
+
 ```Python 
 # generator to print even numbers
 def print_even(test_list):
@@ -457,7 +487,9 @@ print("The even numbers in list are : ", end=" ")
 for j in print_even(test_list):
     print(j, end=" ")
 ```
+
 Output: 
+
 ```
 The original list is : [1, 4, 5, 6, 7]
 The even numbers in list are :  4 6 
@@ -466,6 +498,7 @@ The even numbers in list are :  4 6
 **Example 4: Use of yield Keyword as Boolean**
 
 The possible practical application is that when handling the last amount of data and searching particulars from it, yield can be used as we don’t need to look up again from start and hence would save time. There can possibly be many applications of yield depending upon the use cases. 
+
 ```Python 
 # func to count number of given word
 def print_even(test_string):
@@ -490,9 +523,11 @@ print(count)
 ```
 
 Output
+
 ```Python 
 The number of geeks in string is: 3
 ```
+
 ### Decorators 
 
 Decorators are a very powerful and useful tool in Python since it allows programmers to modify the behaviour of a function or class. Decorators allow us to wrap another function in order to extend the behaviour of the wrapped function, without permanently modifying it. But before diving deep into decorators let us understand some concepts that will come in handy in learning the decorators.
@@ -506,6 +541,7 @@ Decorators are a very powerful and useful tool in Python since it allows program
 - You can store them in data structures such as hash tables, lists,...
 
 **Example 1: Treating the functions as objects.** 
+
 ```Python
 # Python program to illustrate functions 
 # can be treated as objects 
@@ -518,6 +554,7 @@ yell = shout
 
 print(yell('Hello')) 
 ```
+
 Output
 
 ```Python
@@ -544,7 +581,9 @@ def greet(func):
 greet(shout) 
 greet(whisper) 
 ```
+
 Output
+
 ```Python
 HI, I AM CREATED BY A FUNCTION PASSED AS AN ARGUMENT.
 hi, i am created by a function passed as an argument.
@@ -565,7 +604,9 @@ add_15 = create_adder(15)
 
 print(add_15(10)) 
 ```
+
 Output
+
 ```Python
 25
 ```
@@ -577,6 +618,7 @@ The above three examples depict the important concepts that are needed to unders
 As stated above the decorators are used to modify the behaviour of function or class. In Decorators, functions are taken as the argument into another function and then called inside the wrapper function.
 
 Syntax for Decorator: 
+
 ```Python
     @gfg_decorator
     def hello_decorator():
@@ -589,6 +631,7 @@ Syntax for Decorator:
         
     hello_decorator = gfg_decorator(hello_decorator)'''
 ```
+
 In the above code, gfg_decorator is a callable function, that will add some code on the top of some another callable function, hello_decorator function and return the wrapper function.
 
 **Decorator can modify the behaviour:**
@@ -627,12 +670,15 @@ function_to_be_used = hello_decorator(function_to_be_used)
 # calling the function
 function_to_be_used()
 ```
+
 Output: 
+
 ```Python
 Hello, this is before function execution
 This is inside the function !!
 This is after function execution
 ```
+
 Let’s see the behaviour of the above code and how it runs step by step when the “function_to_be_used” is called.
 
 ![Images](./Images/decorators1.png)
@@ -681,12 +727,16 @@ def factorial(num):
 # calling the function.
 factorial(10)
 ```
+
 Output
+
 ```Python
 3628800
 Total time taken in :  factorial 2.0061802864074707
 ```
+
 ##### **Chaining Decorators**
+
 In simpler terms chaining decorators means decorating a function with multiple decorators.
 
 Example: 
@@ -718,11 +768,14 @@ def num2():
 print(num()) 
 print(num2())
 ```
+
 Output
+
 ```python
 400
 200
 ```
+
 The above example is similar to calling the function as –
 
 ```
@@ -757,6 +810,7 @@ with FileManager("myfile.txt") as f:
     # Do something with the file
     pass
 ```
+
 In this example, the FileManager class defines a context manager for opening a file. The __enter__() method opens the file and returns it to the with statement. The __exit__() method closes the file.
 
 When the with statement enters the context, the __enter__() method is called and the file is opened. The with statement then executes the block of code inside the statement. When the block of code finishes executing, the __exit__() method is called and the file is closed.
@@ -774,11 +828,13 @@ The asterisk (*) operator is used to unpack sequences, such as lists and tuples.
 ```python
 a, b, c = [1, 2, 3]
 ```
+
 The double asterisk (**) operator is used to unpack dictionaries. For example, the following code unpacks the dictionary `{'a': 1, 'b': 2, 'c': 3}` into the variables `a`, `b`, and `c`:
 
 ```python
 a, b, c = {'a': 1, 'b': 2, 'c': 3}
 ```
+
 Unpacking can be used to make code more concise and readable. For example, the following code unpacks the list `[1, 2, 3]` and then prints the values of `a`, `b`, and `c`:
 
 ```Python
@@ -787,13 +843,16 @@ print(a)
 print(b)
 print(c)
 ```
+
 Output
 ```Python
 1
 2
 3
 ```
+
 **This code is equivalent to the following code:**
+
 ```Python
 a = [1, 2, 3][0]
 b = [1, 2, 3][1]
@@ -802,19 +861,24 @@ print(a)
 print(b)
 print(c)
 ```
+
 **However, the first code is more concise and readable.**
 
 Unpacking can also be used to assign multiple values to a single variable. For example, the following code unpacks the list `[1, 2, 3]` and assigns the values to the variable `values`:
+
 ```Python
 values = [1, 2, 3]
 ```
+
 **This code is equivalent to the following code:**
+
 ```Python
 values = []
 values.append([1, 2, 3][0])
 values.append([1, 2, 3][1])
 values.append([1, 2, 3][2])
 ```
+
 **However, the first code is more concise and readable.**
 
 Unpacking is a powerful feature that can be used to make code more concise and readable. It is a good idea to learn how to use unpacking to improve your Python code.
@@ -825,13 +889,16 @@ Python supports a type of container dictionary called “namedtuple()” present
 
 
 **Python NamedTuple Syntax**
+
 ```Python
     namedtuple(typename, field_names)
 
     typename – The name of the namedtuple.
     field_names – The list of attributes stored in the namedtuple.
 ```
+
 **Example: Code implementation of NamedTuple is shown in Python.**
+
 ```Python
 # Python code to demonstrate namedtuple()
 from collections import namedtuple
@@ -850,11 +917,14 @@ print(S[1])
 print("The Student name using keyname is : ", end="")
 print(S.name)
 ```
+
 Output
+
 ```python
 The Student age using index is : 19
 The Student name using keyname is : Nandini
 ```
+
 **Operations on NamedTuple**
 
 Below are the following operations that can done by using namedtuple():
@@ -875,6 +945,7 @@ Point = namedtuple('Point', ['x', 'y'])
 p = Point(x=1, y=2)
 print(p.x, p.y) 
 ```
+
 Output
 
 ```Python
@@ -909,6 +980,7 @@ print(S[1])
 ```
 
 Output
+
 ```python
 The Student age using index is : 19
 ```
@@ -931,10 +1003,13 @@ S = Student('Nandini', '19', '2541997')
 print("The Student name using keyname is : ", end="")
 print(S.name)
 ```
+
 Output
+
 ```python
 The Student name using keyname is : Nandini
 ```
+
 **Access Using getattr()**
 
 This is yet another way to access the value by giving namedtuple and key value as its argument. In this example, we are using getattr() to access the student’s id in the given namedtuple.
@@ -955,6 +1030,7 @@ print(getattr(S, 'DOB'))
 ```
 
 Output
+
 ```python
 The Student DOB using getattr() is : 2541997
 ```
@@ -989,7 +1065,9 @@ di = {'name': "Nikhil", 'age': 19, 'DOB': '1391997'}
 print("The namedtuple instance using iterable is  : ")
 print(Student._make(li))
 ```
+
 Output
+
 ```python
 The namedtuple instance using iterable is  : 
 Student(name='Manjeet', age='19', DOB='411997')
@@ -1018,7 +1096,9 @@ di = {'name': "Nikhil", 'age': 19, 'DOB': '1391997'}
 print("The OrderedDict instance using namedtuple is  : ")
 print(S._asdict())
 ```
+
 Output
+
 ```python
 The OrderedDict instance using namedtuple is  : 
 OrderedDict([('name', 'Nandini'), ('age', '19'), ('DOB', '2541997')])
@@ -1048,7 +1128,9 @@ di = {'name': "Nikhil", 'age': 19, 'DOB': '1391997'}
 print("The namedtuple instance from dict is  : ")
 print(Student(**di))
 ```
+
 Output
+
 ```python
 The namedtuple instance from dict is  : 
 Student(name='Nikhil', age=19, DOB='1391997')
@@ -1078,7 +1160,9 @@ S = Student('Nandini', '19', '2541997')
 print("All the fields of students are : ")
 print(S._fields)
 ```
+
 Output
+
 ```python
 All the fields of students are : 
 ('name', 'age', 'DOB')
@@ -1103,11 +1187,14 @@ S = Student('Nandini', '19', '2541997')
 print("returns a new namedtuple : ")
 print(S._replace(name='Manjeet'))
 ```
+
 Output
+
 ```python
 returns a new namedtuple : 
 Student(name='Manjeet', age='19', DOB='2541997')
 ```
+
 **__new__()**
 
 This function returns a new instance of the Student class, by taking the values that we want to assign to the keys in the named tuple. In this example, we are using __new__() to return a new instance of the Student class.
@@ -1124,10 +1211,13 @@ S = Student('Nandini', '19', '2541997')
 # Student.__new__ returns a new instance of Student(name,age,DOB)
 print(Student.__new__(Student,'Himesh','19','26082003'))
 ```
+
 Output
+
 ```python
 Student(name='Himesh', age='19', DOB='26082003')
 ```
+
 **__getnewargs__()**
 
 This function returns the named tuple as a plain tuple. In this example, we are doing the same by using __getnewargs__().
@@ -1145,7 +1235,9 @@ H=Student('Himesh','19','26082003')
 # .__getnewargs__ returns the named tuple as a plain tuple
 print(H.__getnewargs__())
 ```
+
 Output
+
 ```
 ('Himesh', '19', '26082003')
 ```
